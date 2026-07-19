@@ -1,5 +1,54 @@
 // mission
 .mission {
-  
+  padding: 124px 0 224px 0;
+
+  .container {
+    position: relative;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 631px;
+  }
+
+  &_text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .section_title {
+    font-size: 90px;
+    margin-bottom: 24px;
+
+    span {
+      display: block;
+      font-size: 60px;
+    }
+  }
+
+  h3 {
+    font-family: $font-Inter;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: $color-white;
+  }
+
+  p {
+    max-width: 688px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -2%;
+    color: $color-white-80;
+
+    b {
+      font-weight: 600;
+      color: $color-white;
+    }
+  }
 }
 // mission

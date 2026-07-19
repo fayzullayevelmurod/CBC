@@ -612,6 +612,51 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 24px;
 }
 
+.mission {
+  padding: 124px 0 224px 0;
+}
+.mission .container {
+  position: relative;
+}
+.mission img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 631px;
+}
+.mission_text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mission .section_title {
+  font-size: 90px;
+  margin-bottom: 24px;
+}
+.mission .section_title span {
+  display: block;
+  font-size: 60px;
+}
+.mission h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.mission p {
+  max-width: 688px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  color: rgba(255, 255, 255, 0.8);
+}
+.mission p b {
+  font-weight: 600;
+  color: #ffffff;
+}
+
 .partners {
   margin-bottom: 144px;
 }
