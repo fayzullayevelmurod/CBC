@@ -68,10 +68,23 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 0 60px;
 
   @include media('lg') {
+    padding: 0 16px;
   }
 
 }
 
-.section-top {
-  margin-top: 160px;
+.section_title {
+  font-family: $font-sf-distant-galaxy;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 60px;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  color: $color-white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+
+  @include media('lg') {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

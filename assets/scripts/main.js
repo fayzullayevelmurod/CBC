@@ -1,23 +1,27 @@
 
-let swiper = new Swiper(".treatmentsSwiper", {
-  slidesPerView: 1.10,
-  spaceBetween: 28,
+let swiper = new Swiper(".roadmapSwiper", {
+  slidesPerView: 1.03,
+  spaceBetween: 16,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".roadmap-pagination",
     clickable: true,
+  },
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
   },
   breakpoints: {
     640: {
-      slidesPerView: 2.2,
-      spaceBetween: 28,
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
     993: {
-      slidesPerView: 3.2,
-      spaceBetween: 28,
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
     1200: {
-      slidesPerView: 3.6,
-      spaceBetween: 40,
+      slidesPerView: 4,
+      spaceBetween: 20,
     },
   },
 });
