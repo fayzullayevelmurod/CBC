@@ -1,0 +1,34 @@
+// partners
+.partners {
+  margin-bottom: 144px;
+
+  .section_title {
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  &_in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 165px;
+  }
+
+  img {
+    &.one {
+      width: 208px;
+      height: 39px;
+    }
+
+    &.two {
+      width: 77px;
+      height: 77px;
+    }
+
+    &.three {
+      width: 286px;
+      height: 78px;
+    }
+  }
+}
+// partners
