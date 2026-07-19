@@ -469,6 +469,37 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.btn-green {
+  display: flex;
+  align-items: center;
+}
+.btn-green .text {
+  height: 50px;
+  width: 264px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 35px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(90deg, #66FF00 0%, #16B862 51.88%, #00858F 100%);
+  box-shadow: 0px 8px 8px -4px rgba(22, 184, 98, 0.1215686275);
+  box-shadow: 0px 12px 32px 0px rgba(22, 184, 98, 0.2392156863), 0px 2px 4px -1px rgba(10, 70, 82, 0.1215686275), 0px 0px 1px 0px rgba(22, 184, 98, 0.2392156863);
+}
+.btn-green .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #66FF00 0%, #16B862 51.88%, #00858F 100%);
+}
+
 .header {
   padding-top: 26px;
 }
@@ -582,7 +613,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .roadmap {
-  padding: 144px 0;
+  padding: 144px 0 300px 0;
   position: relative;
 }
 .roadmap::before {
@@ -709,9 +740,62 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 24px;
 }
 
+.community_in {
+  position: relative;
+  border-radius: 40px;
+  background: #ffffff;
+  padding: 70px 40px;
+}
+.community_in .section_title {
+  font-size: 57px;
+  color: #000000;
+  text-shadow: none;
+}
+.community_in p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  text-align: justify;
+  color: #000000;
+  max-width: 526px;
+  margin: 24px 0 32px 0;
+}
+.community_img {
+  position: absolute;
+  right: 18px;
+  bottom: 0;
+  width: 764px;
+}
+.community_social {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.community_social a {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #1C1C1C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+.community_social a:hover {
+  transform: scale(1.1);
+}
+
 .footer {
-  background: rgba(0, 133, 143, 0.6);
-  backdrop-filter: blur(70px);
+  padding-top: 140px;
+  position: relative;
+  z-index: -1;
 }
 .footer .container {
   display: flex;

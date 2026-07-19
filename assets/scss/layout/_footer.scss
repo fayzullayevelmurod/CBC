@@ -1,6 +1,9 @@
 .footer {
-  background: rgba(0, 133, 143, 0.6);
-  backdrop-filter: blur(70px);
+  // background: rgba(0, 133, 143, 0.6);
+  // filter: blur(70px);
+  padding-top: 140px;
+  position: relative;
+  z-index: -1;
 
   .container {
     display: flex;
