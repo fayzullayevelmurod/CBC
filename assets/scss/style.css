@@ -612,6 +612,56 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 24px;
 }
 
+.tokenomics_head p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 48px 0 100px 0;
+  max-width: 868px;
+}
+@media (max-width: 1024px) {
+  .tokenomics_head p {
+    margin: 32px 0 48px 0;
+  }
+}
+.tokenomics_in {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.tokenomics .text h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.tokenomics .text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 20px;
+}
+.tokenomics .text ul li {
+  list-style-type: disc;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  color: rgba(255, 255, 255, 0.8);
+}
+.tokenomics .text ul li b {
+  font-weight: 700;
+  color: #ffffff;
+}
+.tokenomics img {
+  width: 772px;
+}
+
 .roadmap {
   padding: 144px 0 300px 0;
   position: relative;

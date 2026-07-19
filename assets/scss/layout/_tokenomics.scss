@@ -1,0 +1,62 @@
+// tokenomics
+.tokenomics {
+  &_head {
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: -2%;
+      color: $color-white-80;
+      margin: 48px 0 100px 0;
+      max-width: 868px;
+
+      @include media('lg') {
+        margin: 32px 0 48px 0;
+      }
+    }
+  }
+
+  &_in {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .text {
+    h3 {
+      font-family: $font-Inter;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
+      color: $color-white;
+      margin-bottom: 24px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding-left: 20px;
+
+      li {
+        list-style-type: disc;
+        font-family: $font-Inter;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: -2%;
+        color: $color-white-80;
+
+        b {
+          font-weight: 700;
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 772px;
+  }
+}
+// tokenomics
