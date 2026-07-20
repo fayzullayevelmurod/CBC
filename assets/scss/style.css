@@ -612,6 +612,57 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 24px;
 }
 
+.hero {
+  padding-top: 76px;
+}
+.hero .container {
+  position: relative;
+}
+.hero_text h1 {
+  font-family: "SF Distant Galaxy", sans-serif;
+  font-weight: 400;
+  font-size: 130px;
+  line-height: 92%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero_text .one_text {
+  max-width: 484px;
+  margin-top: 16px;
+}
+.hero_text .text_block {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  width: 315px;
+}
+.hero_text .text_block .two_text {
+  margin: 18px 0 24px 0;
+}
+.hero_text h3 {
+  font-family: "SF Distant Galaxy AltOutline", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero_text p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  color: rgba(255, 255, 255, 0.8);
+}
+.hero_text .btn-green {
+  width: 283px;
+}
+.hero_text .btn-green .icon {
+  flex-shrink: 0;
+}
+
 .calculation {
   padding-top: 120px;
 }
@@ -1033,6 +1084,7 @@ p, h1, h2, h3, h4, h5, h6 {
   letter-spacing: -2%;
   color: rgba(255, 255, 255, 0.8);
   margin: 48px 0 22px 0;
+  max-width: 1103px;
 }
 @media (max-width: 1024px) {
   .roadmap_head p {
@@ -1190,6 +1242,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
+  margin-bottom: 6px;
   padding-top: 140px;
   position: relative;
   z-index: -1;

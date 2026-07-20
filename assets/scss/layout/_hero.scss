@@ -1,0 +1,63 @@
+// hero
+.hero {
+  padding-top: 76px;
+
+  .container {
+    position: relative;
+  }
+
+  &_text {
+    h1 {
+      font-family: $font-sf-distant-galaxy;
+      font-weight: 400;
+      font-size: 130px;
+      line-height: 92%;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      color: $color-white;
+    }
+
+    .one_text {
+      max-width: 484px;
+      margin-top: 16px;
+    }
+
+    .text_block {
+      position: absolute;
+      top: 0;
+      right: 60px;
+      width: 315px;
+
+      .two_text {
+        margin: 18px 0 24px 0;
+      }
+    }
+
+    h3 {
+      font-family: $font-sf-distant-galaxy-altoutline;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 111%;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      color: $color-white;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: -2%;
+      color: $color-white-80;
+    }
+
+    .btn-green {
+      width: 283px;
+
+      .icon {
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+// hero

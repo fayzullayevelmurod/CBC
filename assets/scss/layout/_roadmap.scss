@@ -24,6 +24,7 @@
       letter-spacing: -2%;
       color: $color-white-80;
       margin: 48px 0 22px 0;
+      max-width: 1103px;
 
       @include media('lg') {
         margin: 32px 0 48px 0;
