@@ -1,9 +1,21 @@
 // mission
 .mission {
   padding: 124px 0 224px 0;
+  position: relative;
+  z-index: 2;
 
   .container {
     position: relative;
+  }
+
+  &_blue_bg {
+    position: absolute;
+    left: 0;
+    bottom: 150px;
+    width: 100%;
+    height: 117px;
+    background: rgba(0, 133, 143, 1);
+    filter: blur(70px);
   }
 
   img {

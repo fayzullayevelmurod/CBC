@@ -1,9 +1,65 @@
 // hero
 .hero {
-  padding-top: 76px;
+  padding: 160px 0 542px 0;
 
   .container {
     position: relative;
+  }
+
+  &_btns {
+    position: absolute;
+    bottom: -370px;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    .play_btn {
+      width: 160px;
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #66FF00 0%, #16B862 51.88%, #00858F 100%);
+      padding: 30px;
+      border-radius: 50%;
+      box-shadow: 0px 8px 8px -4px rgba(22, 184, 98, 0.12),
+      0px 12px 32px 0px rgba(22, 184, 98, 0.24),
+      0px 2px 4px -1px rgba(10, 70, 82, 0.12),
+      0px 0px 1px 0px rgba(22, 184, 98, 0.24);
+
+      img {
+        width: 102px;
+        height: 102px;
+      }
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      letter-spacing: -2%;
+      text-transform: uppercase;
+      color: $color-white;
+    }
+  }
+
+  .circle {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    width: 570px;
+    height: 570px;
+    background: rgba(102, 255, 0, 1);
+    filter: blur(85px);
+    border-radius: 50%;
   }
 
   &_text {
@@ -15,6 +71,7 @@
       letter-spacing: 0.01em;
       text-transform: uppercase;
       color: $color-white;
+      // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
     }
 
     .one_text {
@@ -56,6 +113,54 @@
 
       .icon {
         flex-shrink: 0;
+      }
+    }
+  }
+
+  &_img {
+    position: absolute;
+    top: -75px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 515px;
+    transform: translateX(40px);
+  }
+
+  &_slider {
+    position: absolute;
+    width: calc(100% - 120px);
+    bottom: -360px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    &_right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    img {
+      width: 182px;
+      height: 218px;
+      border-radius: 30px;
+      border: 8px solid $color-white;
+      box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.25);
+
+      &.one {
+        transform: translateY(-34px) rotate(-3.30deg);
+      }
+
+      &.four {
+        transform: translateY(-34px) rotate(3.30deg);
       }
     }
   }

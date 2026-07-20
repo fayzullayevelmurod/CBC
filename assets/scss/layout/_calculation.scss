@@ -1,7 +1,7 @@
 // calculation
 .calculation {
-  padding-top: 120px;
-
+  position: relative;
+  z-index: 2;
   .container {
     display: flex;
     align-items: start;
