@@ -121,6 +121,126 @@
         <!-- main -->
         <main>
 
+            <!-- calculation -->
+            <section class="calculation">
+                <div class="container">
+                    <div class="calculation_text">
+                        <h2 class="section_title">
+                            Community <span>Solana meme</span>
+                        </h2>
+                        <img src="./assets/images/calculation_img.png" alt="">
+                    </div>
+                    <div class="calculation_block">
+                        <h3 class="block_title">
+                            $CBC Presale is <span>live</span>
+                        </h3>
+
+                        <div class="calculation_progress">
+                            <div class="progress_text">
+                                <p>
+                                    Actual Price: <span>$0.00008</span>
+                                </p>
+                                <p>
+                                    Listing Price: <span>$0.0006</span>
+                                </p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress_block"></div>
+                            </div>
+                        </div>
+
+                        <h4>
+                            SOL Raised:
+                            <span>$246 / $100,000</span>
+                        </h4>
+
+                        <div class="instant-buy">
+                            <h2 class="instant-buy__title">
+                                Instant Buy
+                            </h2>
+
+                            <div class="instant-buy__coins">
+                                <!-- SOL -->
+                                <div class="coin-card active" data-coin="sol">
+                                    <div class="coin-card__icon">
+                                        <img src="./assets/images/solana.svg" alt="">
+                                        <h3>SOL</h3>
+                                    </div>
+                                    <div class="coin-card__content">
+                                        <span>Chain SOLANA</span>
+                                    </div>
+                                </div>
+
+                                <!-- USDT -->
+                                <div class="coin-card" data-coin="usdt">
+                                    <div class="coin-card__icon">
+                                        <img src="./assets/images/usdt.svg" alt="">
+                                        <h3>USDT</h3>
+                                    </div>
+                                    <div class="coin-card__content">
+                                        <span>Chain SOLANA</span>
+                                    </div>
+                                </div>
+
+                                <!-- USDC -->
+                                <div class="coin-card disabled" data-coin="usdc">
+                                    <div class="coin-card__icon">
+                                        <img src="./assets/images/usdc.svg" alt="">
+                                        <h3>USDC</h3>
+                                    </div>
+                                    <div class="coin-card__content">
+                                        <span>Chain SOLANA</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="buy-form">
+                                <div class="buy-form__item">
+                                    <label>
+                                        Pay with <span id="payCoin">SOL</span>
+                                    </label>
+                                    <div class="buy-input">
+                                        <div class="buy-input__icon">
+                                            <img id="payCoinImg" src="./assets/images/solana.svg" alt="">
+                                        </div>
+                                        <input type="number" placeholder="0">
+                                    </div>
+                                </div>
+                                <div class="buy-form__item">
+                                    <label>
+                                        Receive $CBC
+                                    </label>
+                                    <div class="buy-input">
+
+                                        <div class="buy-input__icon">
+                                            <img src="./assets/images/cbc_icon.png" alt="">
+                                        </div>
+
+                                        <input type="number" placeholder="0">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn-green">
+                            <span class="text">
+                                Connect Wallet
+                            </span>
+                            <span class="icon">
+                                <svg width="15" height="6" viewBox="0 0 15 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 2.88672L10 -3.31005e-05L10 5.77347L15 2.88672ZM10.5 2.88672L10.5 2.38672L4.37114e-08 2.38672L0 2.88672L-4.37114e-08 3.38672L10.5 3.38672L10.5 2.88672Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- calculation -->
+
+            <!-- mission -->
             <section class="mission">
                 <div class="container">
                     <div class="mission_text">
@@ -149,6 +269,7 @@
                     </div>
                 </div>
             </section>
+            <!-- mission -->
 
             <!-- partners -->
             <section class="partners">
@@ -401,7 +522,7 @@
                                 and become part of something legendary.
                             </p>
                             <img src="./assets/images/community_img.png" alt="" class="community_img">
-                            <div class="btn-green">
+                            <button class="btn-green">
                                 <span class="text">
                                     Buy CBC
                                 </span>
@@ -412,7 +533,7 @@
                                             fill="white" />
                                     </svg>
                                 </span>
-                            </div>
+                            </button>
                         </div>
                         <ul class="community_social">
                             <li>

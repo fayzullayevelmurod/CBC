@@ -27,3 +27,13 @@ let swiper = new Swiper(".roadmapSwiper", {
 });
 // roadmap
 
+// coin_card
+const cards = document.querySelectorAll(".coin-card");
+
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    cards.forEach((item) => item.classList.remove("active"));
+    card.classList.add("active");
+  });
+});
+// coin_card
