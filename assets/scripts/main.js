@@ -27,6 +27,17 @@ let swiper = new Swiper(".roadmapSwiper", {
 });
 // roadmap
 
+// header scroll state
+const header = document.querySelector('.header');
+
+const updateHeaderScroll = () => {
+  if (!header) return;
+  header.classList.toggle('scroll', window.scrollY > 0);
+};
+
+window.addEventListener('scroll', updateHeaderScroll);
+window.addEventListener('load', updateHeaderScroll);
+
 // coin_card
 const cards = document.querySelectorAll(".coin-card");
 

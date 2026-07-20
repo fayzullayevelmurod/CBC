@@ -512,11 +512,18 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
-  padding-top: 26px;
-  position: absolute;
+  padding: 24px 0;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 5;
+  transition: 0.3s ease;
+}
+.header.scroll {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: #1C1C1C;
+  padding: 12px 0;
 }
 .header .container {
   display: flex;
