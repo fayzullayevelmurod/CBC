@@ -511,6 +511,11 @@ p, h1, h2, h3, h4, h5, h6 {
   filter: blur(70px);
   z-index: 2;
 }
+@media (max-width: 1024px) {
+  .blue_bg {
+    height: 1398px;
+  }
+}
 
 .header {
   padding: 24px 0;
@@ -944,13 +949,35 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: start;
   justify-content: space-between;
 }
+@media (max-width: 1024px) {
+  .calculation .container {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
 .calculation .section_title {
   font-size: 90px;
   margin-bottom: 24px;
 }
+@media (max-width: 1280px) {
+  .calculation .section_title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1024px) {
+  .calculation .section_title {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+}
 .calculation .section_title span {
   display: block;
   font-size: 60px;
+}
+@media (max-width: 1024px) {
+  .calculation .section_title span {
+    font-size: 36px;
+  }
 }
 .calculation_text {
   position: relative;
@@ -961,6 +988,11 @@ p, h1, h2, h3, h4, h5, h6 {
   top: 50px;
   width: 452px;
 }
+@media (max-width: 1024px) {
+  .calculation_text img {
+    display: none;
+  }
+}
 .calculation_block {
   width: 592px;
   padding: 48px;
@@ -968,6 +1000,13 @@ p, h1, h2, h3, h4, h5, h6 {
   box-shadow: 16px 16px 48px 0px rgba(9, 13, 20, 0.4), -8px -8px 16px 0px rgba(224, 224, 255, 0.0392156863), 0px 8px 8px 0px rgba(9, 13, 20, 0.4);
   border-radius: 24px;
   border: 1px solid #16B862;
+}
+@media (max-width: 1024px) {
+  .calculation_block {
+    border-radius: 24px;
+    padding: 32px;
+    width: 100%;
+  }
 }
 .calculation_block .block_title {
   font-family: "Inter", sans-serif;
@@ -980,17 +1019,36 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin-bottom: 48px;
 }
+@media (max-width: 1024px) {
+  .calculation_block .block_title {
+    font-size: 28px;
+    line-height: 100%;
+    margin-bottom: 32px;
+  }
+}
 .calculation_block .block_title span {
   color: #16B862;
 }
 .calculation_block .calculation_progress {
   margin-bottom: 48px;
 }
+@media (max-width: 1024px) {
+  .calculation_block .calculation_progress {
+    margin-bottom: 32px;
+  }
+}
 .calculation_block .calculation_progress .progress_text {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
+}
+@media (max-width: 1024px) {
+  .calculation_block .calculation_progress .progress_text {
+    align-items: start;
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 .calculation_block .calculation_progress .progress_text p {
   font-family: "Inter", sans-serif;
@@ -1011,6 +1069,11 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 12px;
   background: linear-gradient(180deg, #090D14 0%, #282A2E 52.98%, #2D2F33 100%);
 }
+@media (max-width: 1024px) {
+  .calculation_block .calculation_progress .progress {
+    height: 16px;
+  }
+}
 .calculation_block .calculation_progress .progress_block {
   position: absolute;
   height: 100%;
@@ -1030,9 +1093,23 @@ p, h1, h2, h3, h4, h5, h6 {
   gap: 16px;
   justify-content: center;
 }
+@media (max-width: 1024px) {
+  .calculation_block h4 {
+    justify-content: start;
+    align-items: start;
+    font-size: 16px;
+    gap: 12px;
+  }
+}
 .calculation_block h4 span {
   font-size: 28px;
   color: #16B862;
+}
+@media (max-width: 1024px) {
+  .calculation_block h4 span {
+    font-size: 18px;
+    display: block;
+  }
 }
 .calculation_block .instant-buy__title {
   font-family: "Inter", sans-serif;
@@ -1043,6 +1120,11 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   margin: 48px 0 24px 0;
   text-align: center;
+}
+@media (max-width: 1024px) {
+  .calculation_block .instant-buy__title {
+    margin: 32px 0 16px 0;
+  }
 }
 .calculation_block .instant-buy__coins {
   display: flex;
@@ -1083,6 +1165,12 @@ p, h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #1C1C1C;
 }
+@media (max-width: 1024px) {
+  .calculation_block .coin-card h3 {
+    font-size: 24px;
+    line-height: 100%;
+  }
+}
 .calculation_block .coin-card span {
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -1107,6 +1195,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .calculation_block .coin-card.disabled {
   opacity: 40%;
+}
+@media (max-width: 1024px) {
+  .calculation_block .coin-card.disabled {
+    display: none;
+  }
 }
 .calculation_block .coin-card__icon {
   display: flex;
@@ -1135,6 +1228,11 @@ p, h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
+}
+@media (max-width: 1024px) {
+  .calculation_block .buy-form {
+    gap: 16px;
+  }
 }
 @media (max-width: 768px) {
   .calculation_block .buy-form {
@@ -1205,6 +1303,11 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   margin-top: 48px;
 }
+@media (max-width: 1024px) {
+  .calculation_block .btn-green {
+    margin-top: 24px;
+  }
+}
 .calculation_block .btn-green .text {
   width: 100%;
 }
@@ -1237,8 +1340,8 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1024px) {
   .mission_blue_bg {
     height: 87px;
-    bottom: 600px;
-    filter: blur(65px);
+    bottom: 550px;
+    filter: blur(55px);
   }
 }
 .mission img {
