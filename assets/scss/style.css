@@ -1275,23 +1275,51 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 48px;
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .partners .section_title {
+    margin-bottom: 32px;
+  }
+}
 .partners_in {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 165px;
 }
+@media (max-width: 1024px) {
+  .partners_in {
+    gap: 48px;
+  }
+}
 .partners img.one {
   width: 208px;
   height: 39px;
+}
+@media (max-width: 1024px) {
+  .partners img.one {
+    width: 105px;
+    height: 20px;
+  }
 }
 .partners img.two {
   width: 77px;
   height: 77px;
 }
+@media (max-width: 1024px) {
+  .partners img.two {
+    width: 40px;
+    height: 40px;
+  }
+}
 .partners img.three {
   width: 286px;
   height: 78px;
+}
+@media (max-width: 1024px) {
+  .partners img.three {
+    width: 145px;
+    height: 40px;
+  }
 }
 
 .tokenomics_head p {
@@ -1306,12 +1334,19 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1024px) {
   .tokenomics_head p {
     margin: 32px 0 48px 0;
+    font-size: 16px;
   }
 }
 .tokenomics_in {
   display: flex;
   align-items: center;
   gap: 60px;
+}
+@media (max-width: 1024px) {
+  .tokenomics_in {
+    align-items: start;
+    flex-direction: column;
+  }
 }
 .tokenomics .text h3 {
   font-family: "Inter", sans-serif;
@@ -1342,6 +1377,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .tokenomics img {
   width: 772px;
+}
+@media (max-width: 1024px) {
+  .tokenomics img {
+    width: 100%;
+  }
 }
 
 .roadmap {

@@ -5,6 +5,10 @@
   .section_title {
     margin-bottom: 48px;
     text-align: center;
+
+    @include media('lg') {
+      margin-bottom: 32px;
+    }
   }
 
   &_in {
@@ -12,22 +16,41 @@
     align-items: center;
     justify-content: center;
     gap: 165px;
+
+    @include media('lg') {
+      gap: 48px;
+    }
   }
 
   img {
     &.one {
       width: 208px;
       height: 39px;
+
+      @include media('lg') {
+        width: 105px;
+        height: 20px;
+      }
     }
 
     &.two {
       width: 77px;
       height: 77px;
+
+      @include media('lg') {
+        width: 40px;
+        height: 40px;
+      }
     }
 
     &.three {
       width: 286px;
       height: 78px;
+
+      @include media('lg') {
+        width: 145px;
+        height: 40px;
+      }
     }
   }
 }
