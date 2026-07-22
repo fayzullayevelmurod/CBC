@@ -67,7 +67,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   padding: 0 60px;
 
-  @include media('lg') {
+  @include media('xl') {
     padding: 0 16px;
   }
 }
@@ -91,6 +91,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .btn-green {
   display: flex;
   align-items: center;
+  transition: .3s ease;
 
   .text {
     height: 50px;

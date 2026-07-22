@@ -48,3 +48,15 @@ cards.forEach((card) => {
   });
 });
 // coin_card
+
+// burger
+const menuToggle = document.getElementById("menu-toggle");
+
+menuToggle.addEventListener("click", function () {
+  document.body.classList.toggle("nav-open");
+
+  document.querySelectorAll(".header_link, .connect_btn").forEach((item) => {
+    item.classList.toggle("active");
+  });
+});
+// burger
