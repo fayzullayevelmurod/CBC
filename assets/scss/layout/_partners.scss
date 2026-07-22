@@ -1,6 +1,24 @@
 // partners
 .partners {
-  margin-bottom: 144px;
+  padding-bottom: 144px;
+  position: relative;
+
+  @include media('lg') {
+    padding-bottom: 72px;
+  }
+
+  &::before {
+    @include media('lg') {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 133, 143, 1);
+      z-index: -1;
+      height: 200px;
+      filter: blur(90px);
+    }
+  }
 
   .section_title {
     margin-bottom: 48px;

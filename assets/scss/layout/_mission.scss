@@ -4,6 +4,10 @@
   position: relative;
   z-index: 2;
 
+  @include media('lg') {
+    padding: 72px 0;
+  }
+
   .container {
     position: relative;
   }
@@ -16,6 +20,12 @@
     height: 117px;
     background: rgba(0, 133, 143, 1);
     filter: blur(70px);
+
+    @include media('lg') {
+      height: 87px;
+      bottom: 600px;
+      filter: blur(65px);
+    }
   }
 
   img {
@@ -23,6 +33,11 @@
     top: 0;
     right: 0;
     width: 631px;
+
+    @include media('lg') {
+      position: static;
+      width: 100%;
+    }
   }
 
   &_text {
@@ -35,9 +50,17 @@
     font-size: 90px;
     margin-bottom: 24px;
 
+    @include media('lg') {
+      font-size: 36px;
+    }
+
     span {
       display: block;
       font-size: 60px;
+
+      @include media('lg') {
+        font-size: 36px;
+      }
     }
   }
 
@@ -56,6 +79,10 @@
     line-height: 120%;
     letter-spacing: -2%;
     color: $color-white-80;
+
+    @include media('lg') {
+      font-size: 16px;
+    }
 
     b {
       font-weight: 600;
