@@ -3,6 +3,10 @@
   padding: 144px 0 300px 0;
   position: relative;
 
+  @include media('lg') {
+    padding: 72px 0;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -11,6 +15,12 @@
     height: 716px;
     background: rgba(0, 133, 143, 1);
     filter: blur(70px);
+
+    @include media('lg') {
+      height: 427px;
+      filter: blur(90px);
+      bottom: 60px;
+    }
   }
 
   &_head {
@@ -28,6 +38,7 @@
 
       @include media('lg') {
         margin: 32px 0 48px 0;
+        font-size: 16px;
       }
     }
   }

@@ -1348,6 +1348,11 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 144px 0 300px 0;
   position: relative;
 }
+@media (max-width: 1024px) {
+  .roadmap {
+    padding: 72px 0;
+  }
+}
 .roadmap::before {
   content: "";
   position: absolute;
@@ -1356,6 +1361,13 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 716px;
   background: rgb(0, 133, 143);
   filter: blur(70px);
+}
+@media (max-width: 1024px) {
+  .roadmap::before {
+    height: 427px;
+    filter: blur(90px);
+    bottom: 60px;
+  }
 }
 .roadmap_head {
   position: relative;
@@ -1373,6 +1385,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1024px) {
   .roadmap_head p {
     margin: 32px 0 48px 0;
+    font-size: 16px;
   }
 }
 .roadmap .roadmapSwiper {
