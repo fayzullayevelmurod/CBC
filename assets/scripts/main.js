@@ -60,3 +60,112 @@ menuToggle.addEventListener("click", function () {
   });
 });
 // burger
+
+// hero_slider
+const wrapper = document.querySelector(".hero_slider_wrap");
+const slider = document.querySelector(".hero_slider");
+
+if (wrapper && slider) {
+  let isDragging = false;
+
+  let startX = 0;
+
+  let currentX = 0;
+
+  let prevX = 0;
+
+  let maxX = 0;
+
+  let minX = 0;
+
+  function calculateLimits() {
+    const wrapperWidth = wrapper.offsetWidth;
+    const sliderWidth = slider.scrollWidth;
+
+    // o'ng tomondagi limit
+    maxX = 0;
+
+    // chap tomondagi limit
+    minX = -(sliderWidth - wrapperWidth);
+
+    // agar slider ekranga sig'sa
+    if (minX > 0) {
+      minX = 0;
+    }
+  }
+
+  calculateLimits();
+
+  window.addEventListener("resize", calculateLimits);
+
+  slider.addEventListener("mousedown", startDrag);
+
+  window.addEventListener("mousemove", drag);
+
+  window.addEventListener("mouseup", endDrag);
+
+  slider.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+
+    prevX = currentX;
+
+    slider.style.transition = "none";
+  });
+
+  slider.addEventListener("touchmove", (e) => {
+    const x = e.touches[0].clientX;
+
+    let move = x - startX;
+
+    currentX = prevX + move;
+
+    currentX = checkLimit(currentX);
+
+    slider.style.transform = `translateX(${currentX}px)`;
+  });
+
+  slider.addEventListener("touchend", () => {
+    slider.style.transition = "transform .35s ease";
+  });
+
+  function startDrag(e) {
+    isDragging = true;
+
+    startX = e.clientX;
+
+    prevX = currentX;
+
+    slider.style.transition = "none";
+  }
+
+  function drag(e) {
+    if (!isDragging) return;
+
+    let move = e.clientX - startX;
+
+    currentX = prevX + move;
+
+    currentX = checkLimit(currentX);
+
+    slider.style.transform = `translateX(${currentX}px)`;
+  }
+
+  function endDrag() {
+    isDragging = false;
+
+    slider.style.transition = "transform .35s ease";
+  }
+
+  function checkLimit(value) {
+    if (value > maxX) {
+      return maxX;
+    }
+
+    if (value < minX) {
+      return minX;
+    }
+
+    return value;
+  }
+}
+// hero_slider
