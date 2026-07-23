@@ -1527,6 +1527,17 @@ p, h1, h2, h3, h4, h5, h6 {
     filter: blur(90px);
   }
 }
+.partners_wrap {
+  overflow: visible;
+}
+@media (max-width: 1024px) {
+  .partners_wrap {
+    width: 100%;
+    overflow: visible;
+    cursor: grab;
+    touch-action: pan-y;
+  }
+}
 .partners .section_title {
   margin-bottom: 48px;
   text-align: center;
@@ -1544,7 +1555,15 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 1024px) {
   .partners_in {
+    margin: auto;
+    width: -moz-max-content;
+    width: max-content;
     gap: 48px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    will-change: transform;
+    transition: transform 0.35s ease;
   }
 }
 .partners img.one {

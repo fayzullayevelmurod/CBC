@@ -20,6 +20,17 @@
     }
   }
 
+  &_wrap {
+    overflow: visible;
+
+    @include media('lg') {
+      width:100%;
+      overflow:visible;
+      cursor:grab;
+      touch-action:pan-y;
+    }
+  }
+
   .section_title {
     margin-bottom: 48px;
     text-align: center;
@@ -36,7 +47,12 @@
     gap: 165px;
 
     @include media('lg') {
-      gap: 48px;
+      margin: auto;
+      width:max-content;
+      gap:48px;
+      user-select:none;
+      will-change:transform;
+      transition:transform .35s ease;
     }
   }
 
