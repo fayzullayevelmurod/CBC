@@ -139,3 +139,45 @@ p, h1, h2, h3, h4, h5, h6 {
     top: 800px;
   }
 }
+
+.bg_text_wrap {
+  position: absolute;
+  width: 100vw;
+  white-space: nowrap;
+}
+
+.bg_text_track {
+  display: flex;
+  width: max-content;
+  animation: marquee 10s linear infinite;
+}
+
+.bg_text {
+    flex-shrink: 0;
+    margin-right: 100px;
+}
+
+@keyframes marquee {
+  from {
+      transform: translateX(0);
+  }
+
+  to {
+      transform: translateX(calc(-50%));
+  }
+}
+
+.bg_text {
+  font-family: $font-sf-distant-galaxy-outline;
+  font-weight: 400;
+  font-size: 250px;
+  line-height: 60px;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  color: #FFFFFF1A;
+
+  @include media('lg') {
+    font-size: 122px;
+    line-height: 122px;
+  }
+}

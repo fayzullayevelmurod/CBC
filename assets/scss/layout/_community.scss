@@ -54,7 +54,7 @@
     @include media('lg') {
       width: 268px;
       position: static;
-      transform: translateX(-10px);
+      transform: translateY(7px);
     }
   }
 
@@ -62,6 +62,12 @@
     @include media('lg') {
       margin: auto;
       transform: translateY(-20px);
+    }
+
+    .text {
+      @include media('lg') {
+        width: 230px;
+      }
     }
   }
 

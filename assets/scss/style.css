@@ -518,6 +518,48 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.bg_text_wrap {
+  position: absolute;
+  width: 100vw;
+  white-space: nowrap;
+}
+
+.bg_text_track {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  animation: marquee 10s linear infinite;
+}
+
+.bg_text {
+  flex-shrink: 0;
+  margin-right: 100px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.bg_text {
+  font-family: "SF Distant Galaxy Outline", sans-serif;
+  font-weight: 400;
+  font-size: 250px;
+  line-height: 60px;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.1019607843);
+}
+@media (max-width: 1024px) {
+  .bg_text {
+    font-size: 122px;
+    line-height: 122px;
+  }
+}
+
 .header {
   padding: 24px 0;
   position: fixed;
@@ -834,6 +876,7 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 160px;
   height: 160px;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   background: linear-gradient(90deg, #66FF00 0%, #16B862 51.88%, #00858F 100%);
@@ -1029,8 +1072,13 @@ p, h1, h2, h3, h4, h5, h6 {
   transform: translateY(-34px) rotate(-3.3deg);
 }
 @media (max-width: 1024px) {
+  .hero_slider img.one {
+    transform: translateY(-21px) rotate(-3.3deg);
+  }
+}
+@media (max-width: 1024px) {
   .hero_slider img.three {
-    transform: translateY(-34px) rotate(-3.3deg);
+    transform: translateY(-21px) rotate(-3.3deg);
   }
 }
 .hero_slider img.four {
@@ -1201,6 +1249,8 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: start;
     font-size: 16px;
     gap: 12px;
+    max-width: 200px;
+    flex-wrap: wrap;
   }
 }
 .calculation_block h4 span {
@@ -1430,6 +1480,14 @@ p, h1, h2, h3, h4, h5, h6 {
 .mission .container {
   position: relative;
 }
+.mission .bg_text_wrap {
+  top: 180px;
+}
+@media (max-width: 1024px) {
+  .mission .bg_text_wrap {
+    top: 75px;
+  }
+}
 .mission_blue_bg {
   position: absolute;
   left: 0;
@@ -1463,32 +1521,32 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   gap: 24px;
 }
-.mission .section_title {
+.mission_text .section_title {
   font-size: 90px;
   margin-bottom: 24px;
 }
 @media (max-width: 1024px) {
-  .mission .section_title {
+  .mission_text .section_title {
     font-size: 36px;
   }
 }
-.mission .section_title span {
+.mission_text .section_title span {
   display: block;
   font-size: 60px;
 }
 @media (max-width: 1024px) {
-  .mission .section_title span {
+  .mission_text .section_title span {
     font-size: 36px;
   }
 }
-.mission h3 {
+.mission_text h3 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
   color: #ffffff;
 }
-.mission p {
+.mission_text p {
   max-width: 688px;
   font-weight: 400;
   font-size: 20px;
@@ -1497,11 +1555,11 @@ p, h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.8);
 }
 @media (max-width: 1024px) {
-  .mission p {
+  .mission_text p {
     font-size: 16px;
   }
 }
-.mission p b {
+.mission_text p b {
   font-weight: 600;
   color: #ffffff;
 }
@@ -1597,6 +1655,17 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.tokenomics {
+  position: relative;
+}
+.tokenomics .bg_text_wrap {
+  top: 250px;
+}
+@media (max-width: 1024px) {
+  .tokenomics .bg_text_wrap {
+    top: 150px;
+  }
+}
 .tokenomics_head p {
   font-weight: 400;
   font-size: 20px;
@@ -1682,6 +1751,14 @@ p, h1, h2, h3, h4, h5, h6 {
     height: 427px;
     filter: blur(90px);
     bottom: 60px;
+  }
+}
+.roadmap .bg_text_wrap {
+  top: 205px;
+}
+@media (max-width: 1024px) {
+  .roadmap .bg_text_wrap {
+    top: 75px;
   }
 }
 .roadmap_head {
@@ -1857,13 +1934,18 @@ p, h1, h2, h3, h4, h5, h6 {
   .community_img {
     width: 268px;
     position: static;
-    transform: translateX(-10px);
+    transform: translateY(7px);
   }
 }
 @media (max-width: 1024px) {
   .community .btn-green {
     margin: auto;
     transform: translateY(-20px);
+  }
+}
+@media (max-width: 1024px) {
+  .community .btn-green .text {
+    width: 230px;
   }
 }
 .community_social {

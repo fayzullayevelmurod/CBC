@@ -162,6 +162,8 @@
         align-items: start;
         font-size: 16px;
         gap: 12px;
+        max-width: 200px;
+        flex-wrap: wrap;
       }
 
       span {

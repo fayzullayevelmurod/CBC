@@ -1,5 +1,15 @@
 // tokenomics
 .tokenomics {
+  position: relative;
+
+  .bg_text_wrap {
+    top: 250px;
+
+    @include media('lg') {
+      top: 150px;
+    }
+  }
+
   &_head {
     p {
       font-weight: 400;

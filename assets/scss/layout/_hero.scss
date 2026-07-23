@@ -31,6 +31,7 @@
       width: 160px;
       height: 160px;
       display: flex;
+      flex-shrink: 0;
       align-items: center;
       justify-content: center;
       background: linear-gradient(90deg, #66FF00 0%, #16B862 51.88%, #00858F 100%);
@@ -233,11 +234,15 @@
 
       &.one {
         transform:translateY(-34px) rotate(-3.3deg);
+
+        @include media('lg') {
+          transform:translateY(-21px) rotate(-3.3deg);
+        }
       }
 
       &.three {
         @include media('lg') {
-          transform:translateY(-34px) rotate(-3.3deg);
+          transform:translateY(-21px) rotate(-3.3deg);
         }
       }
 

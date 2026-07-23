@@ -12,6 +12,14 @@
     position: relative;
   }
 
+  .bg_text_wrap {
+    top: 180px;
+
+    @include media('lg') {
+      top: 75px;
+    }
+  }
+
   &_blue_bg {
     position: absolute;
     left: 0;
@@ -44,49 +52,49 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-  }
 
-  .section_title {
-    font-size: 90px;
-    margin-bottom: 24px;
-
-    @include media('lg') {
-      font-size: 36px;
-    }
-
-    span {
-      display: block;
-      font-size: 60px;
+    .section_title {
+      font-size: 90px;
+      margin-bottom: 24px;
 
       @include media('lg') {
         font-size: 36px;
       }
-    }
-  }
 
-  h3 {
-    font-family: $font-Inter;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    color: $color-white;
-  }
+      span {
+        display: block;
+        font-size: 60px;
 
-  p {
-    max-width: 688px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: -2%;
-    color: $color-white-80;
-
-    @include media('lg') {
-      font-size: 16px;
+        @include media('lg') {
+          font-size: 36px;
+        }
+      }
     }
 
-    b {
-      font-weight: 600;
+    h3 {
+      font-family: $font-Inter;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
       color: $color-white;
+    }
+
+    p {
+      max-width: 688px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: -2%;
+      color: $color-white-80;
+
+      @include media('lg') {
+        font-size: 16px;
+      }
+
+      b {
+        font-weight: 600;
+        color: $color-white;
+      }
     }
   }
 }

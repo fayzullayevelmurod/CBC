@@ -23,6 +23,14 @@
     }
   }
 
+  .bg_text_wrap {
+    top: 205px;
+
+    @include media('lg') {
+      top: 75px;
+    }
+  }
+
   &_head {
     position: relative;
     z-index: 2;
